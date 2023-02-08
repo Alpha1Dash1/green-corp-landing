@@ -213,30 +213,31 @@ opacity: 0.5;
 
 .cards {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 50px;
- }
+	grid-template-columns: 1fr 1fr 1fr;
+}
+	
 
 .card {
 	padding: 35px 40px 25px 40px;
 	background: white;
-	border: solid 1px #D9E4E6;
+	border: 1px solid #D9E4E6;
 	border-radius: 5px;
  }
 
 .card p {
+	opacity: 0.8;
 	font-size: 16px;
 	line-height: 22px;
-	opacity: 0.8;
 }
 
 .card-logo {
-	width: 100px;
-	height: 100px;
-	font-size: 32px;
 	font-weight: 700;
+	font-size: 32px;
 	background-color: #eaeff9;
 	border-radius: 50%;
+	width: 100px;
+	height: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -274,8 +275,8 @@ opacity: 0.5;
 
 .features__feedback-left p {
 	font-size: 18px;
-	line-height: 26px;
 	opacity: 0.7;
+	line-height: 26px;
 }
 
 .features__feedback-right {
@@ -284,9 +285,9 @@ opacity: 0.5;
 }
 
 .features__box {
+	border-radius: 25px;
 	padding: 30px 40px 25px 40px;
 	color: white;
-	border-radius: 25px;
 }
 
 .features__box h3 {
@@ -315,11 +316,11 @@ opacity: 0.5;
   }
 
 .promo__image {
-	width: 50%;
 	background-image: url("img/promo.jpg");
-	background-position: center center;
-	background-size: cover;
+	width: 50%;
 	flex-shrink: 0;
+	background-size: cover;
+	background-position: center;
 }
 
 .promo__right {
@@ -330,10 +331,10 @@ opacity: 0.5;
 .promo__text {
 	background-color: white;
 	padding: 30px 40px;
-	font-size: 20px;
-	line-height: 26px;
-	font-weight: 500;
 	border-radius: 25px;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 26px;
   }
 
 .promo__text p::before {
@@ -353,10 +354,10 @@ opacity: 0.5;
 .promo__text button {
 	background-color: #107b1c;
 	margin-top: 20px;
-	font-size: 18px;
-	padding: 15px 30px;
 	font-weight: 600;
-	box-shadow: 0 16px 36px rgb(16 122 28 / 30%)
+	font-size: 18px;
+	box-shadow: 0 16px 36px rgb(16 122 28 / 30%);
+	padding: 15px 30px;
   }
 
 .promo__button-wrap {
@@ -450,15 +451,17 @@ opacity: 0.5;
 		flex-direction: column-reverse;
 	}
 
+	.promo__right {
+		background-color: #dd5f26;
+		padding: 50px 10px;
+	  }
+
 	.promo__image{
 		width: 100%;
 		width: 500px;
 	}
 
-	.promo__right {
-		background-color: #dd5f26;
-		padding: 50px 10px;
-	  }
+	
  }
 
  @media (max-width: 1024px) {
@@ -513,13 +516,14 @@ opacity: 0.5;
 	.promo {
 		flex-direction: column-reverse;
 	}
-	.promo__image{
-		width: 100%;
-		width: 500px;
-	}
 
 	.promo__right {
 		background-color: #dd5f26;
 		padding: 50px 10px;
 	  }
+
+	.promo__image{
+		width: 100%;
+		width: 500px;
+	}
  }
